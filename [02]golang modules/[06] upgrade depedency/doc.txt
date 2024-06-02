@@ -1,0 +1,20 @@
+upgrade depedency
+
+setelah kita upgrade module kita coba upgrade depedency yang ada di aplikasi. misalnya kita ingin menggunakan module versi terbaru
+untuk upgrade depedency ke versi terbaru, kita bisa mengubah isi go.mod langsung  lalu mengubah tagnya menjadi tag baru
+untuk mendownload versi terbaru gunakan perintah: go get
+
+contohnya gini
+go get github.com/juandanielhalomoan/GoBasicToMaster v1.0.0 
+setelah download depedencynya akan keluar di go mod seperti berikut ini
+github.com/juandanielhalomoan/GoBasicToMaster v1.0.0 // indirect 
+
+kemudian kita bisa upgrade depedencynya dengan liat tag terbarunya
+masuk ke go mod lalu ubah tagnya dengan tag terbaru kemudian lakukan 
+go get  diterminal untuk upgrade semuanya
+misalkan kita melakukan perintah go get lagi golang tidak akan mendownload lagi karena sudah di cache di lokal
+
+perhatian:
+berhati-hati ketika melakukan perubahan abis ini kita ngepush pake tag yang sama, karena si golang ngecache datanya, dan menganggap tag nya udh pernah ada dan tidak akan download ulang
+disarankan ketika melakukan perubahan sekecil apapun harus ubah si versinya
+contohnya versi minor v1.0.0  (0 yang dibelakang ada versi minor) menjadi v1.0.1 itu adalah best practice yang digunakan untuk bikin version dimodule
