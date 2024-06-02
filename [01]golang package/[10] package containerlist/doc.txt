@@ -1,0 +1,9 @@
+package container list
+
+package container/list adalah implementasi struktur data double linked list di golang https://pkg.go.dev/container/list@go1.22.3
+
+sebuah strukur data double linked list: jika data pertama kosong akan ada penunjuk dari data selanjutnya bisa dari data kiri atau data kanan kalo kiri berarti awal kosong lalu dikanan adalah data selanjutnya
+jika kita menambahkan data yang kedua akan ada penunjuk dari data sebelumnya dan setelahnya. untuk apa double linked list? untuk antrian / queque tumpukan
+biasanya kalo diarray ada index dan valuenya
+
+pointer by reference

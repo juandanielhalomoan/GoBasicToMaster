@@ -1,0 +1,13 @@
+package os
+
+golang telah menyediakan banyak sekali package bawaan salah satunya adalah package os
+package os berisikan fungsionalitas untuk mengakses fitur sistem operasi secara independen(bisa digunakan disemua sistem operasi)
+https://pkg.go.dev/os@go1.22.3
+
+dipackage os kita bisa membuka file atau bikin file direktori
+sebelum bisa bikin file dipackage os harus belajar mengenai Input dan output terlebih dahulu IO. IO punya package tersendiri
+untuk manipulasi file kita bisa menggunakan package io
+
+dipackage os ada yang namanya Args yang fungsinya untuk mendapatkan argumen yang dikirimkan ketika kita menjalankan aplikasi, saat menjalankan aplikasi kita bisa mengirimkan sebuah argumen, argumen itu kita bisa tangkap menggunakan Args
+contohnya  go run nama_file argumen
+argumen tersebut akan disimpan menjadi slice dan akan disimpan didalam Args

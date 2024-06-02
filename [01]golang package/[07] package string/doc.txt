@@ -1,0 +1,14 @@
+Package strings
+
+package strings merupakan package yang berisikan function function untuk memanipulasi tipe data string
+ada banyak sekali function yang bisa kita gunakan https://pkg.go.dev/strings@go1.22.3
+
+beberapa function di package strings yang sering digunakan
+
+function
+strings.Trim(string,cutset)//memotong cutset diawal dan akhir string //contohnya ingin menghapus space dikiri dan kanan
+strings.ToLower(string)//membuat semua karakter string menjadi lower case
+strings.ToUpper(string)//membuat semua karakter string menjadi upper case
+strings.Split(string,separator)//memotong string berdasarkan separator
+strings.Contains(string, search)//mengecek apakah string mengandung string lain
+strings.ReplaceAll(string,from ,to)//mengubah semua string dari from - ke to -

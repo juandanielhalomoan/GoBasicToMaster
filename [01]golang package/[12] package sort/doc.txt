@@ -1,0 +1,21 @@
+package sort
+
+package sort merupakan sebuah package yang berisikan utilitas untuk proses pengurutan
+agar data kita bisa diurutkan, kita harus mengimplementasikan kontrak diinterface sort.Interface https://pkg.go.dev/sort@go1.22.3
+
+//elements of the collection be enumerated by an integer index.
+type Interface interface{
+    // Len is the number of elements in the collection.
+    len() int
+    //less reports whether the element with
+    //index i should sort before the element with index j.
+    less(i,j int)bool
+    // swap swaps the elements with indexes i and j
+    swap(i,j int)
+}
+
+
+kontrak sebuah sort.Interface
+harus punya len() panjang dari jumlah elementnya
+less() untuk mengecek apakah kurang dari atau tidak yang hasilnya bool
+swap() menukar posisi contohnya index i dan index j

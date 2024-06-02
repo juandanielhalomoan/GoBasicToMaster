@@ -1,0 +1,11 @@
+package flag
+
+package flag berisikan fungsionalitas untuk memparsing data command line argument
+
+https://pkg.go.dev/flag@go1.22.3
+
+sebelumnya ketika kita mengunakan os Args kita dapetin bulat-bulat, kadang" kita ingin membuat format tertentu untungnya digolang disediakan package flag
+flag.String() balikannya sebuah pointer
+flag.Parse() return valuenya sebuah pointer maka gunakan arsterik untuk mengakses nilainya *variabel
+jika kita ingin mengambil data dari parameter bisa digunakan os.args itu sangat manual sekali
+jika ingin di parsing otomatis bisa menggunakan flag.parse

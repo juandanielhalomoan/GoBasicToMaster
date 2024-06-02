@@ -1,0 +1,2 @@
+ setup up project 
+    go mod init nama_folder_project

@@ -1,0 +1,3 @@
+golang, selain merupakan bahasa pemrograman, GO-LANG juga menyediakan standard library(package bawaan) tanpa harus menggunakan package dari luar buatan orang lain
+contoh pada kelas GO, kita sudah belajar package bernama fmt atau errors
+selain package tersebut, sebenarnya masih banyak package lainnya yang bisa kita gunakan. detail package-package yang terdapat sebagai standard library di golang https://pkg.go.dev/std 

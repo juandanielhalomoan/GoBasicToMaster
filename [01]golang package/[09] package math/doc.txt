@@ -1,0 +1,13 @@
+package math (matematika)
+
+package math merupakan package yang berisikan constant dan fungsi matematika https://pkg.go.dev/math@go1.22.3
+
+beberapa function di package math yang sering digunakan
+
+function
+
+math.Round(float64) //membulatkan float64 keatas atau kebawah, sesuai dengan yang paling dekat
+math.Floor(float64) //membulatkan float64 ke bawah
+math.Ceil(float64) //membulatkan float64 keatas
+math.Max(float64, float64) //mengembalikan nilai float64 paling besar
+math.Min(float64, float64) //memgembalikan nilai float64 paling kecil

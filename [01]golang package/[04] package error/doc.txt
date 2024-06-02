@@ -1,0 +1,12 @@
+packages errors
+sebelumnya kita membahas tentang interface error yang merupakan representais dari error di Golang dan membuat error menggunakan function errors.New()
+sebennarnya masih banyak yang bisa dieksplore menggunakan package error,contohnya ketika ingin membuat beberapa value error yang berbeda
+https://pkg.go.dev/errors@go1.22.3
+    kebiasaan programer golang ketika membuat sebuah error biasanya akan membuat sebuah error divariabel atau constant
+    var(
+        ValidationError = errors.New("validation error")
+        NotFoundError = errors.New("not found error")
+    )
+    //mengecek jenis error
+	//misal kita membuat jenis error sendiri, lalu kita ingin mengecek jenis errornya
+	//kita bisa menggunakan error.Is() untuk mengecek jenis type errornya

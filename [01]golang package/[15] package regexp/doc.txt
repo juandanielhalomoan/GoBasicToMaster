@@ -1,0 +1,15 @@
+package regexp
+
+package regexp(regex expression) adalah utilitas untuk melakukan pencarian regular expression
+regular expression di golang menggunakan library C yang dibuat Google bernama RE2
+https://github.com/google/re2
+https://pkg.go.dev/regexp@go1.22.3
+
+regex berguna untuk mencari karakter
+
+beberapa function yang sering digunakan dipackage regexp
+
+function
+regexp.MustCompile(string)// membuat Regexp dari pattern yang mau kita buat(pola) menggunakan backquote ``
+Regexp.MatchString(string) bool // mengecek apakah regexp match dengan string
+Regexp.FindAllString(string,max) // mencari string yang match dengan maximum jumlah hasil

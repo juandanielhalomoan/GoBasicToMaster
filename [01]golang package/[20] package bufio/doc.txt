@@ -1,0 +1,7 @@
+package bufio
+
+package bufio atau singkatan dari buffered io
+package ini digunakan untuk membuat data IO seperti Reader dan Writer
+https://pkg.go.dev/bufio@go1.22.3
+
+membuat kontrak sesuai IO

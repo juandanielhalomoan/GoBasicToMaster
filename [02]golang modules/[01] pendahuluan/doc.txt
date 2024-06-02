@@ -1,0 +1,8 @@
+Agenda
+
+mengenal go modules
+membuat  module
+rilis module / rilis project
+menambah Depedency ( 3rd-party)
+upgrade module
+upgrade Depedency

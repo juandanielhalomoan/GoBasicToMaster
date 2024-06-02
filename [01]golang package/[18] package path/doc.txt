@@ -1,0 +1,7 @@
+package path
+
+package path digunakan untuk memanipulasi data path seperti path di URL atau path di File System
+secara default package path menggunakan slash sebagai karakter pathnya, oleh karena itu cocok untuk data URL
+https://pkg.go.dev/path@go1.22.3
+
+namun jika ingin menggunakan untuk memanipulasi path di File System, karena Windows menggunakan backslash, maka khusus untuk File System, perlu menggunakan package path/filepath

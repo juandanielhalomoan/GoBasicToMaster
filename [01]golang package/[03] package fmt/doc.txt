@@ -1,0 +1,8 @@
+package fmt
+sebelumnya kita sudah sering menggunakan fmt dengan menggunakan function Println
+selain Println masih banyak function yang terdapat di package fmt, contohnya banyak digunakan untuk melakukan format
+https://pkg.go.dev/fmt@go1.22.3#Println
+    diPrintln kita bisa melakukan subtitusi di Printlnnya mau diisi data parameternya seperti apa
+    kita bisa gunakan menggunakan format f
+    diprintf tidak ada enternya kita harus menambahkan enternya secara manual dengan cara \n
+    diprintf kita bisa menggunakan parameter variadic yang bisa menambahkan parameter sebanyak"nya

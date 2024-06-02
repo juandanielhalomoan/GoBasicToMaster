@@ -1,0 +1,18 @@
+package time
+
+package time adalah package yang berisi fungsionalitas untuk management waktu di go-lang https://pkg.go.dev/time@go1.22.3
+
+representasi waktu digolang adalah package time
+yang sering digunakan adalah type time dan type duration
+
+beberapa function di package time yang sering digunakan
+
+function
+time.Now()// untuk mendapatkan waktu saat ini
+time.Date()// untuk membuat waktu
+time.Parse()// untuk memparsing waktu dari string
+
+Duration
+saat menggunakan tipe data waktu, kadang kita butuh data berupa durasi
+package tipe memiliki type duration yang sebenarnya adalah alias untuk int64
+namun terdapat banyak method yang bisa kita gunakan untuk memanipulasi Duration

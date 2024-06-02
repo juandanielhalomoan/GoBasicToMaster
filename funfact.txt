@@ -1,0 +1,4 @@
+jika menemukan for{
+
+}
+tandanya adalah perulangan yang tidak ada henti karena tidak ada kondisinya sama sekali, bisa diakali dengan break

@@ -1,0 +1,7 @@
+package slices
+
+digolang versi terbaru terdapat fitur bernama Generic programing
+fitur generic membuat kita bisa membuat paramater dengan tipe yang bisa berubah-rubah, tanpa harus menggunakan interface kosong/any
+salah satu package yang menggunakan fitur Generic ini adalah package slices
+package slices digunakan untuk memanipulasi data di slice
+https://pkg.go.dev/slices@go1.22.3

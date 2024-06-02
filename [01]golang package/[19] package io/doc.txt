@@ -1,0 +1,31 @@
+package main
+
+IO atau singkatan dari input output, merupakan fitur digolang yang digunakan sebagai standard untuk proses, Input Output.
+digolang semua mekanisme input output pasti mengikuti standard package io https://pkg.go.dev/io@go1.22.3
+
+IO isinya adalah interface(kontrak) untuk input dan output
+
+Reader
+untuk membaca input golang menggunakan kontrak interface bernama Reader yang terdapat di package io
+type Reader interface{
+    Read(p []byte)(n int,err error)
+    //cara baca
+    // data readnya akan disimpan dibyte dan jumlah data yang berhasil diread dan jika terjadi error
+    //itulah isi kontrak membaca data/ membaca input
+}
+
+Writer
+untuk menulis ke output, Golang menggunakan kontrak interface bernama Writer yang terdapat dipackage io
+
+type Writer interface{
+    //terdapat sebuah method write
+    writer(p [] byte)(n int, err error)
+    // (p) menulis sebuah byte data (n)jumlah data
+}
+
+method Read dan method Writer adalah sebuah kontrak interface inti dari IO
+
+implementasi IO
+penggunaan dari IO sendiri di golang terdapat dibanyak package, sebelumnya contohnya kita menggunakan CSV Reader dan CSV Writer
+karena package IO sebenarnya hanya kontrak untuk IO, untuk implementasi kita harus lakukan sendiri
+tapi untungnya, Golang juga menyediakan package untuk mengimplementasikan IO secara mudah. yaitu menggunakan bufio

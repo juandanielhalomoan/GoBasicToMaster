@@ -1,0 +1,27 @@
+package reflect
+
+dalam bahasa pemrograman, biasanya ada fitur reflection, dimana kita bisa melihat struktur kode kita pada saat aplikasi sedang berjalan
+hal ini bisa dilakukan di golang dengan menggunakan package reflect
+reflection sangat berguna ketika kita ingin membuat library yang general sehingga mudah digunakan
+untuk membaca sebuah format metadata dari sebuah object kita bisa gunakan reflectioning
+
+
+package StructTag
+didalam reflection digolang ada fitur namanya StructTag yaitu tag didalam field, banyak sekali digunakan ketika kita belajar menggunakan library
+seperti untuk web,json,xml.dll banyak digunakan menggunakan StructTag
+
+simplenya saat kita bikin field contohnya membuat struct didalam field kita bisa gunakan tag, menggunakan backtig caranya:
+type Sample struct {
+    Name string `required:"true" max:10"`
+    //required adalah nama tag
+    //true adalah sebuah value tagnya
+    // jika ingin menambahkan data lebih dari satu gunakan space
+    //max adalah nama tag yang kedua
+    //10 adalah sebuah value tagnya
+}
+selanjutnya tag tersebut kita bisa baca menggunakan Tag.Get()
+contohnya Tag.Get("required") //untuk mendapatkan sebuah tag required
+
+fitur StructTag ini sangat cocok ketika kita ingin membuat validation, dari pada kita buat validation secara manual ktia bisa memanfaatkan StructTag
+
+

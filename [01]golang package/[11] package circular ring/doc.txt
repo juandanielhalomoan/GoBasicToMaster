@@ -1,0 +1,6 @@
+package container/ring(cincin)
+
+package container/ring adalah implementasi struktur data circular list(berputar terus)
+circular list adalah struktur data ring, dimana diakhir element akan kembali ke element awal(head) https://pkg.go.dev/container/ring@go1.22.3
+
+jadi jikia kita bikin ring element pertama kalo kita next berarti element kedua dan next lagi element ketiga dan jika sudah diakhir diakan kembali ke element awal lagi

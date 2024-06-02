@@ -1,0 +1,17 @@
+package strconv(string convertion)
+
+sebelumnya kita sudah belajar cara konversi tipe data, misal dari int32 ke int64
+bagaimana jika kita butuh melakukan konversi yang tipe datanya berbeda? misal dari int ke string atau sebaliknya.
+hal tersebut kita bisa lakukan dengan bantuan package strconv(string convertion)
+https://pkg.go.dev/strconv@go1.22.3
+
+
+beberapa function dipackage strconv yang sering digunakan
+
+function
+strconv.parseBool(string) //mengubah string ke boolean
+strconv.parseFloat(string) //mengubah string ke float
+strconv.parseInt(string) //mengubah string ke int
+strconv.FormatBool(bool) //mengubah bool ke string
+strconv.FormatFloat(float, ...) //mengubah float ke string
+strconv.FormatInt(int, ...) //mengubah int64 ke string
