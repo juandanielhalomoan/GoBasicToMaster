@@ -1,0 +1,15 @@
+upgrade module
+
+untuk melakukan upgrade module digolang, kita hanya cukup membuat tag baru di git
+
+caranya hampir sama dengan membuat sebuah tag
+contoh
+misalkan kita sudah commit/ selesai mengerjakan project kita perlu menambahkan upgrade tag baru
+
+git add .
+git commit -m "message comment"
+git push origin
+setelah commit git push origin branch kita tinggal push tag baru
+sebelumnya saya punya  tag v1.0.0 lalu diupgrade dengan cara
+git tag v1.0.0
+git push origin v1.0.0
