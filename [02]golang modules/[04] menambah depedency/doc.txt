@@ -1,0 +1,14 @@
+menambah depedency
+
+dengan cara 
+go get nama-module
+secara otomatis golang akan mendownload librarynya dan lalu memasukan kedalam project kita
+
+
+contoh misalkan kita buat project baru yah, kemudian kita bikin file main.go lalu buat file module dengan cara
+buat new file main.go kemudian buat module diterminal dengan cara go mod init file-name
+masukan link depedency github contoh https://github.com/juandanielhalomoan/say-hello-golang
+ketik diterminal 
+go get github.com/juandanielhalomoan/say-hello-golang
+setelah itu cek di go mod jika ada scripts new line bertambah github.com/juandanielhalomoan/GoBasicToMaster v1.0.0 // indirect 
+berarti membuat depedency sudah berhasil lalu kita bisa mengakses source codenya
