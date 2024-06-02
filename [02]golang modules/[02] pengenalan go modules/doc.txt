@@ -1,0 +1,17 @@
+Sebelum ada go modules
+
+saat kita membuat aplikasi. biasanya kita akan menggunakan library atau depedency dari project lain.
+sebelum ada Go modules, management untuk depedency sangat sulit dilakukan di Go-Lang
+biasanya kita akan meng-copy semua source code library atau depedency lain ke project kita, hal ini membuat project kita menjadi bengkak karena penuh dengan library orang lain.
+atau biasanya library orang lain akan kita save diGOPATH directory, namun hal ini akan sulit jika ternyata beberapa aplikasi butuh library yang sama  dengan versi yang berbeda
+
+go modules merupakan feature baru digolang
+bikin aplikasi apapun jarang banget bikin aplikasi semuanya dicoding sendiri,biasanya kita bikin aplikasi butuh library 3rd party atau library yang kita bikin sendiri
+contohnya saat bikin web digolang kita tidak akan mulai dari awal sekali, kita bisa library web framework yang sudah ada digolang dan mature dan adopsinya sudah banyak
+atau konek ke database tidak mungkin konek ke database manual pake tcp socket atau yang lain" pasti membutuhkan library sdk client atau database driver yang sudah disediakan
+
+Go modules
+go modules mulai dikenalkan di golang 1.11 dan 1.12
+dengan go modules, kita bisa membuat project dengan mudah dan depedency management yang sangat mudah
+
+
