@@ -1,0 +1,25 @@
+membuat module
+
+untuk membuat module baru,kita bisa menggunakan perintah:
+go mod init nama-module
+golang akan secara otomatis membuat file go.mod yang berisikan informasi nama module dan juga versi golang yang kita gunakan
+
+
+Rilis Module
+cara rilis digolang sederhana golang itu gak harus kita bikin file version
+golang terintegrasi baik dengan git
+untuk merilis module, kita hanya perlu membuat tag di git
+
+contohnya:
+bikin project baru digithub lalu copy endpoint project yang dibuat
+go mod init github.com/juandanielhalomoan/GoBasicToMaster 
+
+
+membuat tag digit
+diusahakan membuat tag dimulai dengan kata v
+misalnya mau rilis versi 1.0.0 bisa melakukan dengan cara:
+
+git tag v1.0.0
+git push origin v1.0.0
+
+kemudian check di home github liat disamping kanan ada tulisan Release
