@@ -1,0 +1,9 @@
+major upgrade
+
+bagaimana ada major upgrade yang ada dimodule yang kita buat?
+
+major upgrade biasanya terjadi dikarenakan ada perubahan pada isi kode program kita,sehingga membuatnya tidak backward compatible(codenya rusak)
+    artinya jadi diversi yang terbaru codenya udh berbeda dengan versi yang lamanya sehingga orang" yang pengen upgrade jadi gk bisa upgrade semudah itu
+sebaiknya hal ini sebisa mungkin dihindari, karena disarankan jangan melakukan changes yang besar sehingga backward compatible, harusnya setiap ada perubahan harus dimaintance
+backward compabilitynya
+namun jika tidak bisa dihindari, strategi terbaiknya adalah merubah nama module
